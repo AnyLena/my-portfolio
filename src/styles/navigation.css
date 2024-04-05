@@ -1,15 +1,17 @@
 @import "../fonts/fonts.css";
 
 nav {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: flex-end;
-  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   border-bottom: 1px solid #761f53;
+  background-color: white;
 
   a,
-  label {
+  .logo {
     text-decoration: none;
     color: #761f53;
     padding: 7px 20px 5px 20px;
@@ -36,6 +38,10 @@ nav {
     font-size: 1.2rem;
     background-color: transparent;
     border: none;
-    color: #761f53; 
+    color: #761f53;
+  }
+
+  .logo {
+    margin-right: auto;
   }
 }
