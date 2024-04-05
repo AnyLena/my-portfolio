@@ -1,0 +1,41 @@
+@import "../fonts/fonts.css";
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #761f53;
+
+  a,
+  label {
+    text-decoration: none;
+    color: #761f53;
+    padding: 7px 20px 5px 20px;
+    transition: ease-in-out 0.3s;
+  }
+
+  a:hover {
+    background-color: #761f5326;
+    color: #761f53;
+  }
+
+  .active {
+    background-color: #761f53;
+    color: white;
+    padding: 7px 20px 5px 20px;
+  }
+
+  select {
+    margin: 5px 20px;
+    padding: 2px;
+    justify-content: flex-end;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: #761f53; 
+  }
+}

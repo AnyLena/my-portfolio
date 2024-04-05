@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Home from "./views/Home";
+import Projects from "./views/Projects";
+import About from "./views/About";
+import Navigation from "./components/Navigation";
+import HomeEN from "./views/Home_en";
+import ProjectsEN from "./views/Projects_en";
+import AboutEN from "./views/About_en";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [lang, setLang] = useState("de");
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+          <Navigation lang={lang} setLang={setLang} />
+      {lang === "de" ? (
+        <>
+          <Home lang={lang} />
+          <Projects lang={lang} />
+          <About lang={lang} />
+        </>
+      ) : null}
+      {lang === "en" ? (
+        <>
+          <HomeEN lang={lang} />
+          <ProjectsEN lang={lang} />
+          <AboutEN lang={lang} />
+        </>
+      ) : null}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
