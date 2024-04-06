@@ -4,3 +4,16 @@
   font-size: 10;
   font-family: "Nunito", sans-serif;
 }
+
+:root {
+  --color-berry: #761f53;
+  --color-berry-light: #eadde5;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
