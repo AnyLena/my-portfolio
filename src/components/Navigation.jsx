@@ -18,6 +18,9 @@ const Navigation = ({ lang, setLang, active }) => {
       <a href="/#about" onClick={(e) => scrollTo(e, "about")} className={active === "about" ? "active" : null}>
         {lang === "de" ? "über mich" : "about me"}
       </a>
+      <a href="/#contact" onClick={(e) => scrollTo(e, "about")} className={active === "contact" ? "active" : null}>
+        {lang === "de" ? "kontakt" : "contact"}
+      </a>
       <select
         name="lang"
         id="langSelect"
