@@ -1,0 +1,38 @@
+.contact {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+  }
+  .formElement {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin: 0.5rem;
+
+    input,
+    textarea {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+      border: 1.5px solid var(--primary-color);
+    }
+    label {
+      padding: 6px 10px;
+      text-align: center;
+    }
+  }
+  button {
+    font-size: 1rem;
+  }
+  .form_alert {
+    background-color: var(--primary-color-light);
+    text-align: center;
+    padding: 5px;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}
