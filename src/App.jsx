@@ -2,13 +2,13 @@ import "./styles/section.css";
 import { useEffect, useRef, useState, useMemo } from "react";
 
 //COMPONENTS
-import Home from "./views/Home";
-import Projects from "./views/Projects";
-import About from "./views/About";
+import Home from "./views/de/Home";
+import Projects from "./views/de/Projects";
+import About from "./views/de/About";
 import Navigation from "./components/Navigation";
-import HomeEN from "./views/Home_en";
-import ProjectsEN from "./views/Projects_en";
-import AboutEN from "./views/About_en";
+import HomeEN from "./views/en/Home_en";
+import ProjectsEN from "./views/en/Projects_en";
+import AboutEN from "./views/en/About_en";
 
 function App() {
   const [lang, setLang] = useState("de");
