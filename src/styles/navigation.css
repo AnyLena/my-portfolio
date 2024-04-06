@@ -9,6 +9,7 @@ nav {
   font-size: 1.3rem;
   border-bottom: 1px solid var(--primary-color);
   background-color: white;
+  z-index: 100;
 
   a,
   .logo {
