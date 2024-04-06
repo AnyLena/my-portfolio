@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa6";
-import "../../styles/home.css";
+import "../styles/home.css";
 
 const Home = ({ lang }) => {
   const scrollTo = (e, id) => {
@@ -10,19 +10,19 @@ const Home = ({ lang }) => {
   return (
     <section className="home" id="home">
       <h1>
-        {(lang = "de" ? "Hallo, ich bin " : "Hello, my name is ")}
+        {(lang === "de" ? "Hallo, ich bin " : "Hello, my name is ")}
         <span className="color_berry">Lena Bultmann</span>
       </h1>
       <h2>
         {
-          (lang = "de"
+          (lang === "de"
             ? "Ich bin Full-Stack Webentwicklerin"
             : "I am a full-stack web developer")
         }
       </h2>
       <a href="#projects" onClick={(e) => scrollTo(e, "projects")}>
         <button>
-          {(lang = "de" ? "View my work" : "Mehr über meine Arbeit")}{" "}
+          {(lang === "de" ? "Mehr über meine Arbeit" : "View my work")}
           <span>
             <FaArrowRight />
           </span>

@@ -10,3 +10,31 @@
     font-size: 1.3rem;
   }
 }
+
+@media screen and (max-width: 650px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media screen and (max-width: 530px) {
+    h1 {
+      width: 300px;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+  }
+  

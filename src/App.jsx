@@ -2,11 +2,11 @@ import "./styles/section.css";
 import { useEffect, useRef, useState, useMemo } from "react";
 
 //COMPONENTS
-import Home from "./views/de/Home";
-import Projects from "./views/de/Projects";
-import About from "./views/de/About";
+import Home from "./views/Home";
+import Projects from "./views/Projects";
+import About from "./views/About";
 import Navigation from "./components/Navigation";
-import Contact from "./views/de/Contact";
+import Contact from "./views/Contact";
 
 function App() {
   const [lang, setLang] = useState("de");
