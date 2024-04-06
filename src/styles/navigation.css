@@ -7,24 +7,24 @@ nav {
   justify-content: flex-end;
   font-weight: 600;
   font-size: 1.3rem;
-  border-bottom: 1px solid var(--color-berry);;
+  border-bottom: 1px solid var(--primary-color);
   background-color: white;
 
   a,
   .logo {
     text-decoration: none;
-    color: var(--color-berry);
+    color: var(--primary-color);
     padding: 7px 25px 5px 25px;
     transition: ease-in-out 0.3s;
   }
 
   a:hover {
-    background-color: var(--color-berry-light);
-    color: var(--color-berry);;
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);;
   }
 
   .active {
-    background-color: var(--color-berry);;
+    background-color: var(--primary-color);
     color: white;
     padding: 7px 25px 5px 25px;
   }
@@ -38,7 +38,7 @@ nav {
     font-size: 1.2rem;
     background-color: transparent;
     border: none;
-    color: var(--color-berry);;
+    color: var(--primary-color);
   }
 
   .logo {

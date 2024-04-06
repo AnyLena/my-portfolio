@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-berry: #761f53;
-  --color-berry-light: #eadde5;
+  --primary-color: #761f53;
+  --primary-color-light: #eadde5;
 }
 
 h1 {
@@ -17,3 +17,31 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
+button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color-light);
+    transition: 0.5s ease-in-out;
+  }
+
+  button span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+  }
+  button:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+  }
+
+  button:hover span {
+    transform: rotate(90deg);
+  }
