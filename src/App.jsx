@@ -89,7 +89,7 @@ function App() {
             <AboutEN lang={lang} />
           </div>
           <div ref={contactEnRef}>
-            <ContactEN lang={lang} />
+            <Contact lang={lang} />
           </div>
         </>
       ) : null}
