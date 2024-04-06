@@ -1,0 +1,46 @@
+.about {
+  img {
+    width: 200px;
+    background-color: var(--primary-color-light);
+    border-radius: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .aboutContainer {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .aboutText {
+    width: 500px;
+  }
+  .skillBox {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 30px;
+    margin: 20px 0;
+  }
+  .skillText {
+    background-color: var(--primary-color-light);
+    grid-area: 1/1/2/2;
+    padding: 2px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skillBar_color {
+    background-color: var(--primary-color);
+    width: 1%;
+    grid-area: 1/2/2/3;
+    z-index: 1;
+  }
+  .skillBar {
+    background-color: var(--primary-color-light);
+    width: 100%;
+    grid-area: 1/2/2/3
+  }
+}

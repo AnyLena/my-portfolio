@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../../styles/contact.css";
 import emailjs from "emailjs-com";
+
 const Contact = ({lang}) => {
   const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
