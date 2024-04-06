@@ -4,5 +4,39 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 25rem
+  margin: 0 25rem;
+}
+
+section.dark {
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0 25rem;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  section {
+    margin: 0 10rem;
+  }
+  section.dark {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    margin: 0 5rem;
+  }
+  section.dark {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    margin: 0 0rem;
+  }
+  section.dark {
+    padding: 0 0rem;
+  }
 }

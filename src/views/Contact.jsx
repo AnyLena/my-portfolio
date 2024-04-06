@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../styles/contact.css";
+import "../styles/contact.css";
 import emailjs from "emailjs-com";
 
 const Contact = ({lang}) => {
@@ -32,7 +32,7 @@ const Contact = ({lang}) => {
   }, [message]);
   
   return (
-    <section className="contact" id="contact">
+    <section className="contact dark" id="contact">
       {lang === "de" ? <h2>Schreiben Sie mir!</h2> : <h2>Send me a message!</h2>}
       <div>
         <form className="formContainer" onSubmit={handleSubmit}>

@@ -25,7 +25,16 @@
   }
   button {
     font-size: 1rem;
+    background-color: white;
+    border: none;
   }
+
+  button:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    border: none;
+  }
+
   .form_alert {
     background-color: var(--primary-color-light);
     text-align: center;
@@ -35,4 +44,11 @@
   .hidden {
     visibility: hidden;
   }
+}
+
+@media screen and (max-width: 420px) {
+    .formElement {
+        width: 95vw !important;
+        margin: 0.5rem;
+      }
 }

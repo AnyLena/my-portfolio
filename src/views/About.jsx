@@ -1,16 +1,16 @@
-import lena from "../../assets/me.png";
-import SkillBox from "../../components/SkillBox";
-import "../../styles/about.css";
+import lena from "../assets/me.png";
+import SkillBox from "../components/SkillBox";
+import "../styles/about.css";
 
 const About = ({lang}) => {
   return (
     <section className="about" id="about">
-      <h2>{lang = "de" ? "Über mich" : "About Me"}</h2>
+      {lang === "de" ? <h2>Über mich</h2> : <h2>About Me</h2>}
       <div className="aboutContainer">
         <div>
           <img src={lena} alt="" />
           <p className="aboutText">
-            {lang = "de" ? "Durch meine Arbeit als Projektmanagerin habe ich meine Leidenschaft für das Programmieren entdeckt. Teamwork und sich stetig, gemensam weiterzuentwickeln stehen für mich dabei im Mittelpunkt. Lasst und gemeinsam großartige Projekte umsetzen!" : "EN"}
+            {lang === "de" ? "Durch meine Arbeit als Projektmanagerin habe ich meine Leidenschaft für das Programmieren entdeckt. Teamwork und sich stetig, gemensam weiterzuentwickeln stehen für mich dabei im Mittelpunkt. Lasst und gemeinsam großartige Projekte umsetzen!" : "EN"}
           </p>
         </div>
         <div className="aboutSkills">
