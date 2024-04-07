@@ -1,37 +1,6 @@
-@import "../fonts/fonts.css";
-
 nav {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 600;
-  font-size: 1.3rem;
-  border-bottom: 1px solid var(--primary-color);
-  background-color: white;
-  z-index: 100;
-
-  a,
-  .logo {
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 7px 25px 5px 25px;
-    transition: ease-in-out 0.3s;
-  }
-
-  a:hover {
-    background-color: var(--primary-color-light);
-    color: var(--primary-color);;
-  }
-
-  .active {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 7px 25px 5px 25px;
-  }
-
   select {
-    margin: 5px 20px;
+    margin: 0px 10px;
     padding: 2px;
     justify-content: flex-end;
     font-family: "Nunito", sans-serif;
@@ -41,8 +10,102 @@ nav {
     border: none;
     color: var(--primary-color);
   }
+}
 
-  .logo {
-    margin-right: auto;
+#hamnav {
+  width: 100%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+#hamitems {
+  display: flex;
+  align-items: stretch;
+}
+#hamitems a,
+.logo, .select {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding-bottom: 7px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 7px 25px 0px 25px;
+  transition: ease-in-out 0.3s;
+}
+#hamitems a:hover {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+#hamitems a.active {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 7px 25px 5px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  #hamitems a, .select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
   }
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: var(--primary-color);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+  select {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.logo {
+    margin-right: 800px;
+}
+
+@media screen and (max-width: 1650px) {
+    .logo {
+        margin-right: 500px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .logo {
+        margin-right: 300px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .logo {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logo {
+        margin-right: 0px;
+    }
 }

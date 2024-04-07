@@ -37,10 +37,37 @@
     width: 1%;
     grid-area: 1/2/2/3;
     z-index: 1;
+    transition: 1s;
   }
   .skillBar {
     background-color: var(--primary-color-light);
     width: 100%;
-    grid-area: 1/2/2/3
+    grid-area: 1/2/2/3;
+  }
+  .meter {
+    height: 30px;
+    position: relative;
+    background: var(--primary-color-light);
+    overflow: hidden;
+  }
+
+  .meter span {
+    display: block;
+    height: 100%;
+  }
+
+  .progress {
+    background-color: var(--primary-color);
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+}
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
