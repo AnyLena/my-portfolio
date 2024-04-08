@@ -7,6 +7,7 @@ import Projects from "./views/Projects";
 import About from "./views/About";
 import Navigation from "./components/Navigation";
 import Contact from "./views/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [lang, setLang] = useState("de");
@@ -23,7 +24,7 @@ function App() {
       []
     );
 
-     useEffect(() => {
+    useEffect(() => {
       observer.observe(ref.current);
 
       return () => {
@@ -73,6 +74,7 @@ function App() {
       <div ref={contactRef}>
         <Contact lang={lang} />
       </div>
+      <Footer />
     </>
   );
 }

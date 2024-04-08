@@ -8,7 +8,7 @@ import "../styles/projects.css";
 const Projects = ({lang}) => {
   return (
     <section className="projects dark" id="projects">
-      <h2>Meine Projekte</h2>
+      <h2>{lang === "de" ? "Meine Projekte" : "My Projects"}</h2>
       <div className="projects-container">
 
       <ProjectCard lang={lang} img={meerkat} title="Meerkats Event App" tools={["MongoDB","Express","React","Node"]} url="https://join-the-meerkats.netlify.app/"/>

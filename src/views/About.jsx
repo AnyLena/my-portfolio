@@ -10,7 +10,10 @@ const About = ({lang}) => {
         <div>
           <img src={lena} alt="" />
           <p className="aboutText">
-            {lang === "de" ? "Durch meine Arbeit als Projektmanagerin habe ich meine Leidenschaft für das Programmieren entdeckt. Teamwork und sich stetig, gemensam weiterzuentwickeln stehen für mich dabei im Mittelpunkt. Lasst und gemeinsam großartige Projekte umsetzen!" : "EN"}
+            {lang === "de" ? "Durch meine Arbeit als Projektmanagerin habe ich meine Leidenschaft für das Programmieren entdeckt. Teamwork und die stetige Weiterentwicklung stehen für mich dabei im Mittelpunkt." : "My experiences as a project manager in the web made me realize my passion for coding with special interest interplay between development and project management."}
+          </p>
+          <p className="aboutText">
+            {lang === "de" ? "Lasst und zusammen großartige Projekte umsetzen!" : "Eager to launch career tech."}
           </p>
         </div>
         <div className="aboutSkills">
