@@ -1,4 +1,4 @@
-const ProjectCard = ({ img, title, tools, url }) => {
+const ProjectCard = ({ img, title, tools, url, lang }) => {
   return (
     <div className="project-container">
       <div
@@ -13,8 +13,9 @@ const ProjectCard = ({ img, title, tools, url }) => {
           )}
         </p>
 
-        <a href={url}></a>
-        <button>Read more</button>
+        <a href={url} rel="nofollow noopener" target="_blank">
+          <button>{lang === "de" ? "Schau's dir an" : "Have a look"}</button>
+        </a>
       </div>
     </div>
   );
