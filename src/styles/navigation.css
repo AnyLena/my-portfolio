@@ -35,7 +35,7 @@ nav {
   text-decoration: none;
   text-align: center;
   color: var(--primary-color);
-  padding: 7px 25px 0px 25px;
+  padding: 7px 10px 0px 10px;
   transition: ease-in-out 0.3s;
 }
 #hamitems a:hover {

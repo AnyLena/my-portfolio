@@ -1,42 +1,42 @@
 section {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 25rem;
+  padding: 5rem 25rem;
 }
 
 section.dark {
   background-color: var(--primary-color);
   margin: 0;
-  padding: 0 25rem;
+  padding: 5rem 20rem;
   color: white;
 }
 
 @media screen and (max-width: 1500px) {
   section {
-    margin: 0 10rem;
+    padding: 5rem 10rem;
   }
   section.dark {
-    padding: 0 10rem;
+    padding: 5rem 10rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   section {
-    margin: 0 5rem;
+    padding: 5rem 5rem
   }
   section.dark {
-    padding: 0 5rem;
+    padding: 5rem 5rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   section {
-    margin: 0 0rem;
+    padding: 5rem 0rem;
   }
   section.dark {
-    padding: 0 0rem;
+    padding: 5rem 0rem;
   }
 }

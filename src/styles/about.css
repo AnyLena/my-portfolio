@@ -8,16 +8,17 @@
   }
   .aboutContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   .aboutText {
-    width: 500px;
+    max-width: 500px;
   }
   .skillBox {
-    width: 500px;
+    max-width: 500px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: 30px;
@@ -61,7 +62,6 @@
     animation: progressBar 3s ease-in-out;
     animation-fill-mode: both;
   }
-
 }
 @keyframes progressBar {
   0% {
@@ -69,5 +69,13 @@
   }
   100% {
     width: 100%;
+  }
+}
+
+@media screen and(max-width:770px) {
+  .about {
+    .aboutContainer {
+      flex-direction: column !important;
+    }
   }
 }

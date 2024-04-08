@@ -1,8 +1,8 @@
 .projects {
   .projects-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
-    flex-wrap: wrap;
   }
 
   .project-container {
@@ -46,6 +46,14 @@
     }
     &:hover {
       opacity: 100;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .projects {
+    .projects-container {
+      grid-template-columns: 1fr;
     }
   }
 }
